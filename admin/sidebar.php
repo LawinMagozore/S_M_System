@@ -279,18 +279,7 @@
                 <p>Time table</p>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="pages/UI/buttons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Subjects</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/sliders.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Lessons</p>
-              </a>
-            </li>
+
           </ul>
         </li>
 
@@ -302,32 +291,7 @@
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/UI/general.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Classes</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/icons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Sections</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/buttons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Subjects</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/sliders.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Lessons</p>
-              </a>
-            </li>
-          </ul>
+
         </li>
 
         <li class="nav-item has-treeview">
@@ -338,32 +302,7 @@
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/UI/general.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Classes</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/icons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Sections</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/buttons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Subjects</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/sliders.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Lessons</p>
-              </a>
-            </li>
-          </ul>
+
         </li>
 
         <li class="nav-item has-treeview">
@@ -374,32 +313,7 @@
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/UI/general.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Classes</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/icons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Sections</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/buttons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Subjects</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/sliders.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Lessons</p>
-              </a>
-            </li>
-          </ul>
+
         </li>
 
         <li class="nav-item has-treeview">
@@ -410,32 +324,7 @@
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/UI/general.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Classes</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/icons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Sections</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/buttons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Subjects</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/sliders.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Lessons</p>
-              </a>
-            </li>
-          </ul>
+
         </li>
 
         <li class="nav-item has-treeview">
@@ -446,32 +335,8 @@
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/UI/general.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Classes</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/icons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Sections</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/buttons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Subjects</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/sliders.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Lessons</p>
-              </a>
-            </li>
-          </ul>
+
+
         </li>
 
         <li class="nav-item has-treeview">
@@ -482,32 +347,7 @@
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/UI/general.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Classes</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/icons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Sections</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/buttons.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Subjects</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/UI/sliders.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Lessons</p>
-              </a>
-            </li>
-          </ul>
+
         </li>
 
 

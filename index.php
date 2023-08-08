@@ -22,7 +22,6 @@
 
 
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false"> </a>
-
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li> <a class="dropdown-item" href="#">Action</a> </li>
             <li> <a class="dropdown-item" href="#">Another action</a> </li>
@@ -48,6 +47,14 @@
         <li class="nav-item dropdown text-white">
           <?php if (isset($_SESSION['login'])) { ?>
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-mdb-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user"></i>Account </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbar">
+
+
+
+            </div>
+
+
+
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li> <a class="dropdown-item" href="#">Action</a> </li>
               <li> <a class="dropdown-item" href="#">Another action</a> </li>

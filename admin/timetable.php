@@ -10,13 +10,13 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Manage Periods</h1>
+                    <h1 class="m-0">Manage Timetable</h1>
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Admin </a></li>
-                        <li class="breadcrumb-item active">Periods </li>
+                        <li class="breadcrumb-item active">Timetable </li>
                     </ol>
                 </div>
                 <!-- /.col -->
@@ -36,7 +36,7 @@
                     <!-- Info boxes -->
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title"> Periods </h3>
+                            <h3 class="card-title"> Timetable </h3>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive bg-white">
