@@ -31,68 +31,44 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-8">
-                    <!-- Info boxes -->
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title"> Timetable </h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive bg-white">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>S.No.</th>
-                                            <th>title</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php
+            <div class="card">
+                <div class="card-body">
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <select name="" id="" class="form-control">
 
-                                        $count = 1;
-                                        $args = array(
-                                            'type' => 'section',
-                                            'status' => 'publish',
-                                        );
-                                        $sections = get_posts($args);
-                                        foreach ($sections as $section) {
-                                        ?>
-                                            <tr>
-                                                <td><?= $count++ ?></td>
-                                                <td><?= $section->title ?></td>
-                                                <td></td>
-                                            </tr>
-                                        <?php } ?>
+                                        <option value="0">Select Class</option>
+                                        <option value="0">Select Class</option>
+                                        <option value="0">Select Class</option>
+                                        <option value="0">Select Class</option>
 
-                                    </tbody>
-                                </table>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+
+                                <div class="form-group">
+                                    <select name="" id="" class="form-control">
+
+                                        <option value="0">Select Class</option>
+                                        <option value="0">Select Class</option>
+                                        <option value="0">Select Class</option>
+                                        <option value="0">Select Class</option>
+
+                                    </select>
+                                </div>
+
+
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
-                <div class="col-lg-4">
-                    <!-- Info boxes -->
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title"> Add New period </h3>
-                        </div>
-                        <div class="card-body">
-                            <form action="" method="post">
-                                <label for="title">Title</label>
-                                <div class="form-group">
-                                    <input type="text" name="title" placeholder="title" required class="form-control">
-                                </div>
-                                <button name="submit" class="btn btn-success float-right"> Submit </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                </di>
             </div>
-            <!-- /.row -->
-            <!--/. container-fluid -->
+        </div>
+        <!-- /.row -->
+        <!--/. container-fluid -->
     </section>
     <!-- /.content -->
 

@@ -23,7 +23,7 @@
 
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false"> </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li> <a class="dropdown-item" href="#">Action</a> </li>
+            <li> <a class="dropdown-item" href="/sms/admin/dashboard.php">Dashboard</a> </li>
             <li> <a class="dropdown-item" href="#">Another action</a> </li>
             <li>
               <hr class="dropdown-divider" />
@@ -39,37 +39,40 @@
         <li class="nav-item me-3 me-lg-0"> <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a> </li>
       </ul>
 
-      <!-- new dropdown far end side -->
+      <!-- <li class="nav-item dropdown text-white">
+         new dropdown far end side -->
 
       <ul class="navbar-nav m1-auto nav-flex-icons text-white">
 
         <!-- Dropdown -->
-        <li class="nav-item dropdown text-white">
+
+        <li class="nav-item dropdown">
           <?php if (isset($_SESSION['login'])) { ?>
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-mdb-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user"></i>Account </a>
-            <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbar">
-
-
-
-            </div>
-
-
-
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false"><i class="fas fa-user"></i>Account </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li> <a class="dropdown-item" href="#">Action</a> </li>
               <li> <a class="dropdown-item" href="#">Another action</a> </li>
               <li>
                 <hr class="dropdown-divider" />
               </li>
-              <li> <a class="dropdown-item" href="logout.php">Logout</a> </li>
+            <?php } else { ?>
+              <a href="login.php" class="nav-link text-white"><i class="fa fa-user mr-2 text-white"></i>User login</a>
+            <?php } ?>
             </ul>
-          <?php } else { ?>
-            <a href="login.php" class="nav-link text-white"><i class="fa fa-user mr-2 text-white"></i>User login</a>
-          <?php } ?>
-      </ul>
-      </li>
+        </li>
 
-      <!-- new dropdown far end side-->
+
+        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-user"></i>Account </a>-->
+        <!--<div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item" href="#">Dashboard</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="logout.php">Logout</a>
+        </div>
+        </li>
+      </ul>
+      </ul>
+      </li>-->
+        <!-- new dropdown far end side-->
 
     </div>
   </div>
@@ -87,7 +90,7 @@
       <br>
       <div class="row">
         <div class=" col-lg-6 my-auto">
-          <h1 class="display-3 fw-bolder"><b>School Management Systems</b></h1>
+          <h1 class="display-3 fw-bolder"><b>School Management System</b></h1>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             cupiditate harum iusto.<br>
             Sint aliquid consequuntur cum fugit. Ipsam.</P>
