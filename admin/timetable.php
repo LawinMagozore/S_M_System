@@ -37,26 +37,28 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <select name="" id="" class="form-control">
-
-                                        <option value="0">Select Class</option>
-                                        <option value="0">Select Class</option>
-                                        <option value="0">Select Class</option>
-                                        <option value="0">Select Class</option>
-
+                                    <label for="class">Select Class</label>
+                                    <select require name="class" id="class" class="form-control">
+                                        <option value="">-Select Class-</option>
+                                        <?php
+                                        $classes = get_the_classes($db_conn);
+                                        foreach ($classes as $key => $class) { ?>
+                                            <option value="<?php echo $class->id ?>"> <?php echo $class->title ?> </option>
+                                        <?php } ?>
                                     </select>
+
                                 </div>
                             </div>
                             <div class="col-lg-6">
 
-                                <div class="form-group">
-                                    <select name="" id="" class="form-control">
-                                        <option value="0">Select Section</option>
-                                        <option value="0">Select Section</option>
-                                        <option value="0">Select Section</option>
-                                        <option value="0">Select Section</option>
+
+                                <div class="form-group" id="section-container">
+                                    <label for="section">Select Section</label>
+                                    <select require name="section" id="section" class="form-control">
+                                        <option value="">-Select Section-</option>
                                     </select>
                                 </div>
+
 
 
                             </div>
