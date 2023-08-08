@@ -80,7 +80,7 @@
       <br>
       <div class="row">
         <div class=" col-lg-6 my-auto">
-          <h1 class="display-3 fw-bolder"><b>School Management System</b></h1>
+          <h1 class="display-3 fw-bolder"><b>School Management Systems</b></h1>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             cupiditate harum iusto.<br>
             Sint aliquid consequuntur cum fugit. Ipsam.</P>
