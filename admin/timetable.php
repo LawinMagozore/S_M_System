@@ -108,18 +108,40 @@
                                     $days = ['Monday', 'Tuesday', 'Wensday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
                                     foreach ($days as $day) {
                                         $query = mysqli_query($db_conn, "SELECT * FROM posts as p INNER JOIN metadata as md ON (md.item_id = p.id) INNER JOIN metadata as mp ON (mp.item_id = p.id) WHERE p.type = 'timetable' AND p.status = 'publish' AND md.meta_key ='day_name' AND md.meta_value = '$day' AND mp.meta_key = 'period_id' AND mp.meta_value = '$period->id' ");
-                                        while ($timetable = mysqli_fetch_object($query)) {
 
-                                    ?>
+
+                                        if (mysqli_num_rows($query) > 0) {
+                                            while ($timetable = mysqli_fetch_object($query)) { ?>
+                                                <td>
+                                                    <P>
+                                                        <b>Teacher:</b>
+                                                        <?php
+                                                        $teacher_id = get_metadata($timetable->item_id, 'teacher_id')[0]->meta_value;
+                                                        echo get_user_data($teacher_id)[0]->name;
+                                                        ?>
+
+
+
+                                                        <br>
+                                                        <b>Class:</b>Class 1 <br>
+                                                        <b>Section:</b>B <br>
+                                                        <b>Subject:</b>Mathematics <br>
+
+                                                    </P>
+                                                </td>
+                                            <?php }
+                                        } else { ?>
                                             <td>
                                                 <P>
-                                                    <b>Teacher:</b> <?php print_r(get_metadata($timetable->item_id, 'teacher_id')[0]->meta_value) ?> <br>
-                                                    <b>Class:</b>Class 1 <br>
-                                                    <b>Section:</b>B <br>
-                                                    <b>Subject:</b>Mathematics <br>
+                                                    Unscheduled
 
                                                 </P>
                                             </td>
+
+
+
+
+
                                     <?php }
                                     } ?>
                                 </tr>
