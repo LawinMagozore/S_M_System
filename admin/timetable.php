@@ -45,8 +45,8 @@
                                 <div class="row">
                                     <div class="col-lg">
                                         <div class="form-group">
-                                            <label for="class">Select Class</label>
-                                            <select require name="class" id="class" class="form-control">
+                                            <label for="class_id">Select Class</label>
+                                            <select require name="class_id" id="class_id" class="form-control">
                                                 <option value="">-Select Class-</option>
                                                 <?php
                                                 $count = 1;
@@ -67,8 +67,8 @@
 
 
                                         <div class="form-group" id="section-container">
-                                            <label for="section">Select Teacher</label>
-                                            <select require name="teacher" id="teacher" class="form-control">
+                                            <label for="teacher_id">Select Teacher</label>
+                                            <select require name="teacher_id" id="teacher_id" class="form-control">
                                                 <option value="">-Select Teacher-</option>
                                             </select>
                                         </div>
@@ -92,9 +92,46 @@
 
 
                                         <div class="form-group" id="section-container">
-                                            <label for="section">Select Section</label>
-                                            <select require name="section" id="section" class="form-control">
-                                                <option value="">-Select Section-</option>
+                                            <label for="period_id">Select Period</label>
+                                            <select require name="period_id" id="period_id" class="form-control">
+                                                <option value="">-Select Period-</option>
+
+                                                <?php
+                                                $count = 1;
+                                                $args = array(
+                                                    'type' => 'period',
+                                                    'status' => 'publish',
+                                                );
+
+                                                $periods = get_posts($args);
+                                                foreach ($periods as $key => $period) { ?>
+                                                    <option value="<?php echo $period->id ?>"> <?php echo $period->title ?> </option>
+                                                <?php } ?>
+
+
+
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg">
+
+
+                                        <div class="form-group" id="section-container">
+                                            <label for="day_name">Select Day</label>
+                                            <select require name="day_name" id="day_name" class="form-control">
+                                                <option value="">-Select Day-</option>
+
+
+                                                <?php
+                                                $days = ['Monday', 'Tuesday', 'Wensday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+                                                foreach ($days as $key => $day) { ?>
+                                                    <option value="<?php echo $day ?>"> <?php echo ucwords($day) ?> </option>
+
+                                                <?php } ?>
+
+
+
                                             </select>
                                         </div>
 
@@ -105,22 +142,9 @@
 
 
                                         <div class="form-group" id="section-container">
-                                            <label for="section">Select Section</label>
-                                            <select require name="section" id="section" class="form-control">
-                                                <option value="">-Select Section-</option>
-                                            </select>
-                                        </div>
-
-
-
-                                    </div>
-                                    <div class="col-lg">
-
-
-                                        <div class="form-group" id="section-container">
-                                            <label for="section">Select Section</label>
-                                            <select require name="section" id="section" class="form-control">
-                                                <option value="">-Select Section-</option>
+                                            <label for="subject_id">Select subject</label>
+                                            <select require name="subject_id" id="subject_id" class="form-control">
+                                                <option value="">-Select subject-</option>
                                             </select>
                                         </div>
 
