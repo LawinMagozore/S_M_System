@@ -70,6 +70,8 @@
                                             <label for="teacher_id">Select Teacher</label>
                                             <select require name="teacher_id" id="teacher_id" class="form-control">
                                                 <option value="">-Select Teacher-</option>
+                                                <option value="1">Teacher 1</option>
+                                                <option value="2">Teacher 2</option>
                                             </select>
                                         </div>
 
@@ -145,6 +147,8 @@
                                             <label for="subject_id">Select subject</label>
                                             <select require name="subject_id" id="subject_id" class="form-control">
                                                 <option value="">-Select subject-</option>
+                                                <option value="1">Mathematics</option>
+                                                <option value="2">English</option>
                                             </select>
                                         </div>
 
