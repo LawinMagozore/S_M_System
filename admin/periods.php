@@ -19,7 +19,10 @@ if (isset($_POST['submit'])) {
     }
 
     mysqli_query($db_conn, "INSERT INTO `metadata` (`meta_key`,`meta_value`,`item_id`) VALUES('from','$from','$item_id') ");
-    mysqli_query($db_conn, "INSERT INTO `metadata` (`meta_key`,`meta_value`,`item_id`) VALUES('to','$from','$item_id') ");
+    mysqli_query($db_conn, "INSERT INTO `metadata` (`meta_key`,`meta_value`,`item_id`) VALUES('to','$to','$item_id') ");
+
+
+    header('Location: periods.php');
 }
 
 
