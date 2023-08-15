@@ -37,7 +37,108 @@
             <?php if (isset($_GET['action']) && $_GET['action'] == 'add') { ?>
 
 
+                <div class="card">
+                    <div class="card-body">
 
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <div class="form-group">
+                                            <label for="class">Select Class</label>
+                                            <select require name="class" id="class" class="form-control">
+                                                <option value="">-Select Class-</option>
+                                                <?php
+                                                $count = 1;
+                                                $args = array(
+                                                    'type' => 'class',
+                                                    'status' => 'publish',
+                                                );
+
+                                                $classes = get_posts($args);
+                                                foreach ($classes as $key => $class) { ?>
+                                                    <option value="<?php echo $class->id ?>"> <?php echo $class->title ?> </option>
+                                                <?php } ?>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+
+
+                                        <div class="form-group" id="section-container">
+                                            <label for="section">Select Teacher</label>
+                                            <select require name="teacher" id="teacher" class="form-control">
+                                                <option value="">-Select Teacher-</option>
+                                            </select>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="col-lg">
+
+                                        <div class="form-group" id="section-container">
+                                            <label for="section">Select Section</label>
+                                            <select require name="section" id="section" class="form-control">
+                                                <option value="">-Select Section-</option>
+                                            </select>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="col-lg">
+
+
+                                        <div class="form-group" id="section-container">
+                                            <label for="section">Select Section</label>
+                                            <select require name="section" id="section" class="form-control">
+                                                <option value="">-Select Section-</option>
+                                            </select>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="col-lg">
+
+
+                                        <div class="form-group" id="section-container">
+                                            <label for="section">Select Section</label>
+                                            <select require name="section" id="section" class="form-control">
+                                                <option value="">-Select Section-</option>
+                                            </select>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="col-lg">
+
+
+                                        <div class="form-group" id="section-container">
+                                            <label for="section">Select Section</label>
+                                            <select require name="section" id="section" class="form-control">
+                                                <option value="">-Select Section-</option>
+                                            </select>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                                </select>
+                            </div>
+
+
+
+                        </form>
+
+
+                    </div>
+                </div>
 
 
 
