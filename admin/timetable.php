@@ -1,4 +1,56 @@
 <?php include('../includes/config.php') ?>
+
+
+<?php
+if (isset($_POST['submit'])) {
+
+
+    $class_id = isset($_POST['class_id']) ? isset($_POST['class_id']) : '';
+    $section_id = isset($_POST['section_id']) ? isset($_POST['section_id']) : '';
+    $teacher_id = isset($_POST['teacher_id']) ? isset($_POST['teacher_id']) : '';
+    $period_id = isset($_POST['period_id']) ? isset($_POST['period_id']) : '';
+    $day_name = isset($_POST['day_name']) ? isset($_POST['day_name']) : '';
+    $subject_id = isset($_POST['subject_id']) ? isset($_POST['subject_id']) : '';
+    $date_add = date('Y-m-d g:i:s');
+    $status = 'publish';
+    $author = 1;
+
+
+
+    $query = mysqli_query($db_conn, "INSERT INTO posts (`author`,`status`,`publish_date`) VALUES (`$author`,`$status`,`$date_add`) ");
+    if ($query) {
+
+
+        $item_id = mysqli_insert_id($db_conn);
+    }
+
+
+    $metadata = array(
+
+        'class_id' => $class_id,
+        'section_id' => $section_id,
+        'teacher_id' => $teacher_id,
+        'period_id' => $period_id,
+        'day_name' => $day_name,
+        'subject_id' => $subject_id,
+
+
+    );
+
+    foreach ($metadata as $key => $value) {
+        mysqli_query($db_conn, "INSERT INTO metadata (`item_id`,`meta_key`,`meta_value`) VALUES (`$item_id`,`$meta_key`,`$meta_value`) ");
+    }
+    header('Location: timetable.php');
+}
+
+
+
+
+?>
+
+
+
+
 <?php include('header.php') ?>
 <?php include('sidebar.php') ?>
 
