@@ -95,8 +95,5 @@ function get_user_data($user_id, $type = 'object')
 
 	global $db_conn;
 	$query = mysqli_query($db_conn, "SELECT * FROM accounts WHERE id = $user_id");
-	if (!empty($meta_key)) {
-		$query = mysqli_query($db_conn, "SELECT * FROM accounts WHERE item_id = $item_id AND meta_key = '$meta_key'");
-	}
 	return data_output($query, $type);
 }

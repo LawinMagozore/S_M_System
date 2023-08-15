@@ -1,4 +1,31 @@
 <?php include('../includes/config.php') ?>
+<?php
+
+if (isset($_POST['submit'])) {
+
+    $title = isset($_POST['title']) ? $_POST['title'] : '';
+    $from = isset($_POST['from']) ? $_POST['from'] : '';
+    $to = isset($_POST['to']) ? $_POST['to'] : '';
+    $status = 'publish';
+    $type = 'period';
+    $date_add = date('Y-m-d g:i:s');
+
+    $query = mysqli_query($db_conn, "INSERT INTO `posts` (`title`,`status`,`publish_date`,`type`) VALUES('$title','$status','$date_add','$type') ");
+
+    if ($query) {
+
+
+        $item_id = mysqli_insert_id($db_conn);
+    }
+
+    mysqli_query($db_conn, "INSERT INTO `metadata` (`meta_key`,`meta_value`,`item_id`) VALUES('from','$from','$item_id') ");
+    mysqli_query($db_conn, "INSERT INTO `metadata` (`meta_key`,`meta_value`,`item_id`) VALUES('to','$from','$item_id') ");
+}
+
+
+
+?>
+
 <?php include('header.php') ?>
 <?php include('sidebar.php') ?>
 
@@ -45,7 +72,9 @@
                                         <tr>
                                             <th>S.No.</th>
                                             <th>title</th>
-                                            <th>Action</th>
+                                            <th>From</th>
+                                            <th>To</th>
+
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -53,15 +82,16 @@
 
                                         $count = 1;
                                         $args = array(
-                                            'type' => 'section',
+                                            'type' => 'period',
                                             'status' => 'publish',
                                         );
-                                        $sections = get_posts($args);
-                                        foreach ($sections as $section) {
+                                        $periods = get_posts($args);
+                                        foreach ($periods as $period) {
                                         ?>
                                             <tr>
                                                 <td><?= $count++ ?></td>
-                                                <td><?= $section->title ?></td>
+                                                <td><?= $period->title ?></td>
+                                                <td></td>
                                                 <td></td>
                                             </tr>
                                         <?php } ?>
@@ -80,10 +110,20 @@
                         </div>
                         <div class="card-body">
                             <form action="" method="post">
-                                <label for="title">Title</label>
+
                                 <div class="form-group">
+                                    <label for="title">Title</label>
                                     <input type="text" name="title" placeholder="title" required class="form-control">
                                 </div>
+                                <div class="form-group">
+                                    <label for="title">From</label>
+                                    <input type="time" name="from" placeholder="From" required class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="title">To</label>
+                                    <input type="time" name="to" placeholder="To" required class="form-control">
+                                </div>
+
                                 <button name="submit" class="btn btn-success float-right"> Submit </button>
                             </form>
                         </div>

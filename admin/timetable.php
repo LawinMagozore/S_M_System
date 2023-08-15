@@ -119,9 +119,6 @@
                                                         $teacher_id = get_metadata($timetable->item_id, 'teacher_id')[0]->meta_value;
                                                         echo get_user_data($teacher_id)[0]->name;
                                                         ?>
-
-
-
                                                         <br>
                                                         <b>Class:</b>Class 1 <br>
                                                         <b>Section:</b>B <br>
