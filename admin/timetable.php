@@ -81,8 +81,8 @@
                                     <div class="col-lg">
 
                                         <div class="form-group" id="section-container">
-                                            <label for="section">Select Section</label>
-                                            <select require name="section" id="section" class="form-control">
+                                            <label for="section_id">Select Section</label>
+                                            <select require name="section_id" id="section_id" class="form-control">
                                                 <option value="">-Select Section-</option>
                                             </select>
                                         </div>
@@ -151,20 +151,19 @@
                                                 <option value="2">English</option>
                                             </select>
                                         </div>
+                                    </div>
+                                    <div class="col-lg">
 
-
+                                        <div class="form-group" id="section-container">
+                                            <label for="section">&nbsp;</label>
+                                            <input type="submit" value="submit" name="submit" class="btn btn-secondary form-control" style="background-color: forestgreen;">
+                                        </div>
 
                                     </div>
+
+                                    </select>
                                 </div>
-
-                                </select>
-                            </div>
-
-
-
                         </form>
-
-
                     </div>
                 </div>
 
@@ -304,5 +303,31 @@
         <!--/. container-fluid -->
     </section>
     <!-- /.content -->
+    <!-- subject-->
+    <script>
+        jQuery(document).ready(function() {
 
+            jQuery('#class_id').change(function() {
+                // alert(jQuery(this).val());
+
+                jQuery.ajax({
+                    url: 'ajax.php',
+                    type: 'POST',
+                    data: {
+                        'class_id': jQuery(this).val()
+                    },
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.count > 0) {
+                            jQuery('#section-container').show();
+                        } else {
+                            jQuery('#section-container').hide();
+                        }
+                        jQuery('#section_id').html(response.options);
+                    }
+                });
+            });
+
+        })
+    </script>
     <?php include('footer.php') ?>
