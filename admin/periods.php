@@ -90,12 +90,14 @@ if (isset($_POST['submit'])) {
                                         );
                                         $periods = get_posts($args);
                                         foreach ($periods as $period) {
+                                            $from = get_metadata($period->id, 'from')[0]->meta_value;
+                                            $to = get_metadata($period->id, 'to')[0]->meta_value;
                                         ?>
                                             <tr>
                                                 <td><?= $count++ ?></td>
                                                 <td><?= $period->title ?></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td><?php echo date('h:i A', strtotime($from)) ?></td>
+                                                <td><?php echo date('h:i A', strtotime($to)) ?></td>
                                             </tr>
                                         <?php } ?>
 
