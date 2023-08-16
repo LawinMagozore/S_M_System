@@ -14,10 +14,11 @@ if (isset($_POST['submit'])) {
     $date_add = date('Y-m-d g:i:s');
     $status = 'publish';
     $author = 1;
+    $type = 'timetable';
 
 
 
-    $query = mysqli_query($db_conn, "INSERT INTO posts (`author`,`status`,`publish_date`) VALUES (`$author`,`$status`,`$date_add`) ");
+    $query = mysqli_query($db_conn, "INSERT INTO posts (`type`,`author`,`status`,`publish_date`) VALUES ('$type','$author','$status','$date_add') ");
     if ($query) {
 
 
@@ -38,7 +39,7 @@ if (isset($_POST['submit'])) {
     );
 
     foreach ($metadata as $key => $value) {
-        mysqli_query($db_conn, "INSERT INTO metadata (`item_id`,`meta_key`,`meta_value`) VALUES (`$item_id`,`$meta_key`,`$meta_value`) ");
+        mysqli_query($db_conn, "INSERT INTO metadata (`item_id`,`meta_key`,`meta_value`) VALUES ('$item_id','$key','$value') ");
     }
     header('Location: timetable.php');
 }
