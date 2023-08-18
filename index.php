@@ -290,7 +290,7 @@
       </div>
       <div class="col-6">
         <div class="border rounded position-relative">
-          <div class="p-4 text-centre"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam amet doloribus velit harum cum consequuntur, debitis laboriosam ratione a ex aliquam laudantium repudiandae quas magni saepe veniam molestiae incidunt esse! </div>
+          <div class="p-4 text-centre"> Lorem ipsum consectetur adipisicing elit. Quibusdam amet doloribus velit harum cum consequuntur, debitis laboriosam ratione a ex aliquam laudantium repudiandae quas magni saepe veniam molestiae incidunt esse! </div>
           <i class="fa fa-quote-left fa-3x position-absolute" style="top:.5rem;left:.5rem; opacity: .2"></i>
         </div>
         <div class="text-center mt-n2"> <img src="assets/images/p4.jpg" alt="" class="rounded-circle border" width="100" height="100">
